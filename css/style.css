@@ -153,6 +153,10 @@ table {
           align-items: center;
 }
 
+.container.testimonial {
+  margin: 180px auto;
+}
+
 .container .tenthSixteen {
   width: 62.5%;
   display: -webkit-box;
@@ -267,6 +271,55 @@ table {
   bottom: -50px;
   z-index: -99;
   background-image: url("../img/green-third.svg");
+}
+
+.container .fourhtSixteen {
+  width: 25%;
+}
+
+.container .fourhtSixteen .imageFizjo {
+  width: 193px;
+  height: 201px;
+  position: relative;
+  display: block;
+  background-image: url("../img/magda-zosowska-djecie.png");
+}
+
+.container .fourhtSixteen .imageFizjo::before {
+  content: "";
+  width: 117px;
+  height: 122px;
+  display: block;
+  z-index: -9;
+  position: absolute;
+  right: -60px;
+  bottom: -60px;
+  background: #EBEFFF;
+  border-radius: 76.5702px 76.5702px 76.3158px 0px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.container .twelthSixteen {
+  width: 75%;
+}
+
+.container .twelthSixteen h3 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 55px;
+  color: #000D4F;
+}
+
+.container .twelthSixteen h4 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 55px;
+  color: #000D4F;
 }
 
 .container .sevnthSixteen {
@@ -446,6 +499,49 @@ table {
   bottom: 0;
 }
 
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.benefits div {
+  width: 25%;
+}
+
+.benefits div div {
+  width: 96px;
+  height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.benefits div h5 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #000D4F;
+}
+
 .relative {
   position: relative;
   margin: 109px auto;
@@ -551,5 +647,9 @@ button.secondButton::before {
   font-size: 16px;
   line-height: 32px;
   color: #576192;
+}
+
+.standardParagraph span {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
