@@ -1,0 +1,14 @@
+<svg width="1600" height="1178" viewBox="0 0 1600 1178" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1639" height="1178">
+<rect width="1639" height="1178" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<ellipse opacity="0.4" cx="636" cy="592" rx="1170" ry="577" fill="url(#paint0_diamond)"/>
+</g>
+<defs>
+<radialGradient id="paint0_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(644.125 583.902) rotate(90.7956) scale(585.155 1186.53)">
+<stop stop-color="#DCE9FE"/>
+<stop offset="1" stop-color="#DCE9FE" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
