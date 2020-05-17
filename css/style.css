@@ -1,3 +1,42 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +44,15 @@
           box-sizing: border-box;
 }
 
-.container {
-  width: 1110px;
+.topMenu {
+  width: 100%;
+  max-width: 1110px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 85px;
+  padding-top: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -20,10 +61,234 @@
           align-items: center;
 }
 
-.container ul {
+.topMenu .infoPack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.topMenu .infoPack div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  color: #000D4F;
+  opacity: 0.4;
+}
+
+.topMenu ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.topMenu ul li {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 55px;
+  color: #000D4F;
+  opacity: 0.5;
+  padding: 0 25px;
+}
+
+.topMenu ul li:last-of-type {
+  padding: 0 0 0 25px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 85px;
+  padding-top: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .half {
+  width: 50%;
+}
+
+.container .half div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .half div button:first-of-type {
+  margin-right: 40px;
+}
+
+.container .half h1 {
+  position: relative;
+}
+
+.container .half h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -9;
+  height: 87px;
+  width: 87px;
+  top: -40px;
+  left: -10px;
+  background: #FCCDCF;
+  opacity: 0.7;
+  border-radius: 76.5702px 76.5702px 76.3158px 0px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.container .half span {
+  display: block;
+}
+
+.container .half p {
+  width: 87.5%;
+  margin: 42px 0 27px 0;
+}
+
+.container .half .mainImage {
+  position: relative;
+}
+
+.container .half .mainImage img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin: 90px 0;
+  border-radius: 64px;
+  -webkit-box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1);
+          box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1);
+}
+
+.container .half .mainImage::before {
+  content: url("../img/top-blue-element.svg");
+  display: block;
+  z-index: -99;
+  width: 192.56px;
+  position: absolute;
+  height: 200.78px;
+  right: -60px;
+  top: 20px;
+}
+
+.container .half .mainImage::after {
+  content: url("../img/bottom-top-image.svg");
+  display: block;
+  z-index: 99;
+  width: 192.56px;
+  position: absolute;
+  height: 200.78px;
+  left: 0;
+  bottom: 0;
+}
+
+h1 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 55px;
+  color: #000D4F;
+}
+
+button.firstButton {
+  background: #000D4F;
+  -webkit-box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+          box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 0 42px 0 27px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button.firstButton img {
+  margin-right: 16px;
+}
+
+button.firstButton span {
+  margin-top: 5px;
+}
+
+button.secondButton {
+  position: relative;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000D4F;
+  background: none;
+  line-height: 60px;
+  padding: 5px 0 0 0;
+  border: none;
+}
+
+button.secondButton::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 16px;
+  background-color: #DCE9FE;
+  border-radius: 4px;
+}
+
+.standardParagraph {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #576192;
 }
 /*# sourceMappingURL=style.css.map */

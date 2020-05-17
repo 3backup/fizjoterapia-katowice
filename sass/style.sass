@@ -1,14 +1,197 @@
+// font-family: 'Poppins', sans-serif;
+@import variables
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    display: block
+
+body
+    line-height: 1
+
+ol, ul
+    list-style: none
+
+blockquote, q
+    quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+    content: ''
+    content: none
+
+button
+    cursor: pointer
+table
+    border-collapse: collapse
+    border-spacing: 0
 *
     margin: 0
     padding: 0
     box-sizing: border-box
-.container
-    width: 1110px
+.topMenu
+    width: 100%
+    max-width: 1110px
     margin: 0 auto
     display: flex
     min-height: 85px
+    padding-top: 30px
     justify-content: space-between
     align-items: center
+    .infoPack
+        display: flex
+        flex-direction: row
+        div
+            display: flex
+            flex-direction: row
+            font-family: Poppins
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 32px
+            color: #000D4F
+            opacity: 0.4
+
     ul
         list-style: none
         display: flex
+        li
+            font-family: Sofia Pro
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 55px
+            color: #000D4F
+            opacity: 0.5
+            padding: 0 25px
+            &:last-of-type
+                padding: 0 0 0 25px
+
+.container
+    width: 100%
+    max-width: 1110px
+    margin: 0 auto
+    display: flex
+    min-height: 85px
+    padding-top: 30px
+    flex-direction: row
+    align-items: center
+    .half
+        width: 50%
+        div
+            display: flex
+            flex-direction: row
+            button
+                &:first-of-type
+                    margin-right: 40px
+        h1
+            position: relative
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                z-index: -9
+                height: 87px
+                width: 87px
+                top: -40px
+                left: -10px
+                background: #FCCDCF
+                opacity: 0.7
+                border-radius: 76.5702px 76.5702px 76.3158px 0px
+                transform: rotate(-180deg)
+        span
+            display: block
+        p
+            width: 87.5%
+            margin: $spacingM 0 $spacingS 0
+        .mainImage
+            position: relative
+            img
+                display: flex
+                align-content: flex-end
+                margin: $spacingSection 0
+                border-radius: 64px
+                box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1)
+            &::before
+                content: url("../img/top-blue-element.svg")
+                display: block
+                z-index: -99
+                width: 192.56px
+                position: absolute
+                height: 200.78px
+                right: -60px
+                top: 20px
+            &::after
+                content: url("../img/bottom-top-image.svg")
+                display: block
+                z-index: 99
+                width: 192.56px
+                position: absolute
+                height: 200.78px
+                left: 0
+                bottom: 0
+
+h1
+    font-family: Sofia Pro
+    font-style: normal
+    font-weight: 500
+    font-size: 48px
+    line-height: 55px
+    color: $colorNavyBlue
+button.firstButton
+    background: #000D4F
+    box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25)
+    border-radius: 10px
+    color: #ffffff
+    padding: 0 $spacingM 0 $spacingS
+    font-family: Sofia Pro
+    font-style: normal
+    font-weight: bold
+    line-height: 60px
+    font-size: 16px
+    text-transform: uppercase
+    color: #FFFFFF
+    display: flex
+    align-self: center
+    align-items: center
+    justify-content: center
+
+    img
+        margin-right: $spacingXS
+    span
+        margin-top: 5px
+
+button.secondButton
+    position: relative
+    font-family: Sofia Pro
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    text-transform: uppercase
+    color: $colorNavyBlue
+    background: none
+    line-height: 60px
+    padding: 5px 0 0 0
+    border: none
+    &::before
+        display: block
+        position: absolute
+        content: ""
+        width: 100%
+        height: 2px
+        left: 0
+        bottom: $spacingXS
+        background-color: $colorBorder
+        border-radius: 4px
+.standardParagraph
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 32px
+    color: $colorParagraph
