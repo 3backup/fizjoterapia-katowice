@@ -332,20 +332,45 @@ table
                 height: 200.78px
                 left: 0
                 bottom: 0
+.map
+    display: flex
+    justify-content: space-around
+    margin: $spacingSection auto
+    h2
+        font-family: Sofia Pro
+        font-style: normal
+        font-weight: 300
+        font-size: 38px
+        line-height: 44px
+        color: #000D4F
 .benefits
     display: flex
     justify-content: space-around
     align-self: flex-start
     align-items: flex-start
+
     div
         width: 25%
-        div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .squareRadius
             width: 96px
             height: 96px
             display: flex
             justify-content: center
             align-items: center
             align-self: center
+            margin-bottom: $spacingS
+            &.turqish
+                background: #DDF4F3
+                border-radius: 0px 76.57px 76.57px 76.57px
+            &.shadyBlue
+                background: #EBEFFF
+                border-radius: 76.57px 76.57px 76.57px 0px
+            &.yellowBgc
+                background: #FCFFEB
+                border-radius: 0px 76.57px 76.57px 76.57px
         h5
             font-family: Sofia Pro
             font-style: normal

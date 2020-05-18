@@ -499,6 +499,24 @@ table {
   bottom: 0;
 }
 
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 90px auto;
+}
+
+.map h2 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 44px;
+  color: #000D4F;
+}
+
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,9 +532,19 @@ table {
 
 .benefits div {
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.benefits div div {
+.benefits div .squareRadius {
   width: 96px;
   height: 96px;
   display: -webkit-box;
@@ -530,6 +558,22 @@ table {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-bottom: 27px;
+}
+
+.benefits div .squareRadius.turqish {
+  background: #DDF4F3;
+  border-radius: 0px 76.57px 76.57px 76.57px;
+}
+
+.benefits div .squareRadius.shadyBlue {
+  background: #EBEFFF;
+  border-radius: 76.57px 76.57px 76.57px 0px;
+}
+
+.benefits div .squareRadius.yellowBgc {
+  background: #FCFFEB;
+  border-radius: 0px 76.57px 76.57px 76.57px;
 }
 
 .benefits div h5 {
