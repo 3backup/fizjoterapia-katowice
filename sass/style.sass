@@ -286,6 +286,44 @@ table
             button
                 &:first-of-type
                     margin-right: 40px
+        &.form
+            display: flex
+            justify-content: flex-end
+        form
+            align-content: flex-end
+            width: 80%
+            input
+                border: none
+                margin-top: 20px
+                font-family: Sofia Pro
+                font-style: normal
+                font-weight: bold
+                font-size: 16px
+                line-height: 55px
+                border-radius: 10px
+                padding: 0 30px
+                background-color: #fff
+                text-transform: uppercase
+                color: $colorNonActive
+                box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1)
+            button
+                font-family: Sofia Pro
+                font-style: normal
+                margin-top: 20px
+                font-weight: bold
+                padding-top: 4px
+                font-size: 16px
+                line-height: 51px
+                text-transform: uppercase
+                color: #FFFFFF
+                background: #000D4F
+                box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25)
+                border-radius: 10px
+
+        .elements, form
+            display: flex
+            flex-direction: column
+
         h1
             position: relative
             &::before
@@ -343,6 +381,9 @@ table
         font-size: 38px
         line-height: 44px
         color: #000D4F
+.elements
+    display: flex
+    flex-direction: column
 .benefits
     display: flex
     justify-content: space-around
@@ -389,10 +430,31 @@ table
         display: block
         background-color: #EBEFFF
         border-radius: 13.14px
-        left: 21.875%
-        right: -21.875%
+        left: $violetSpacing
+        right: -$violetSpacing
         z-index: -99
         min-height: 600px
+.relative-contact
+    position: relative
+    margin: $spacingXL auto
+    &::before
+        content: ""
+        position: absolute
+        border-radius: 13.14px
+        display: block
+        background-color: #EBEFFF
+        border-radius: 13.14px
+        left: -$violetSpacing
+        right: -$violetSpacing
+        z-index: -99
+        min-height: 600px
+    h3
+        font-family: Sofia Pro
+        font-style: normal
+        font-weight: 500
+        font-size: 38px
+        line-height: 55px
+        color: #000D4F
 
 .preheading
     font-family: Sofia Pro
@@ -465,3 +527,14 @@ button.secondButton
     color: $colorParagraph
     span
         font-weight: bold
+footer
+    img
+        margin: 70px 50px 70px 0px
+    p
+        font-family: Poppins
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 32px
+        color: #000D4F
+        opacity: 0.3

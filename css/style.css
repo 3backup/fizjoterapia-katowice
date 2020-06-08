@@ -432,6 +432,64 @@ table {
   margin-right: 40px;
 }
 
+.container .half.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .half form {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  width: 80%;
+}
+
+.container .half form input {
+  border: none;
+  margin-top: 20px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 55px;
+  border-radius: 10px;
+  padding: 0 30px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #CDD0DE;
+  -webkit-box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1);
+          box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1);
+}
+
+.container .half form button {
+  font-family: Sofia Pro;
+  font-style: normal;
+  margin-top: 20px;
+  font-weight: bold;
+  padding-top: 4px;
+  font-size: 16px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #000D4F;
+  -webkit-box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+          box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+  border-radius: 10px;
+}
+
+.container .half .elements, .container .half form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .container .half h1 {
   position: relative;
 }
@@ -515,6 +573,16 @@ table {
   font-size: 38px;
   line-height: 44px;
   color: #000D4F;
+}
+
+.elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .benefits {
@@ -601,6 +669,33 @@ table {
   right: -21.875%;
   z-index: -99;
   min-height: 600px;
+}
+
+.relative-contact {
+  position: relative;
+  margin: 109px auto;
+}
+
+.relative-contact::before {
+  content: "";
+  position: absolute;
+  border-radius: 13.14px;
+  display: block;
+  background-color: #EBEFFF;
+  border-radius: 13.14px;
+  left: -21.875%;
+  right: -21.875%;
+  z-index: -99;
+  min-height: 600px;
+}
+
+.relative-contact h3 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 55px;
+  color: #000D4F;
 }
 
 .preheading {
@@ -695,5 +790,19 @@ button.secondButton::before {
 
 .standardParagraph span {
   font-weight: bold;
+}
+
+footer img {
+  margin: 70px 50px 70px 0px;
+}
+
+footer p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  color: #000D4F;
+  opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */
