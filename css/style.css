@@ -478,6 +478,22 @@ table {
   -webkit-box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
           box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .half form button img {
+  margin-right: 16px;
 }
 
 .container .half .elements, .container .half form {
