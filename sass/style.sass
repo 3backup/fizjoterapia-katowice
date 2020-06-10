@@ -200,8 +200,60 @@ table
                 background: #EBEFFF
                 border-radius: 76.5702px 76.5702px 76.3158px 0px
                 transform: rotate(-180deg)
+    .twoSixteen
+        width: 12.5%
+        display: flex
+        justify-content: flex-start
+        &.flex-end
+            justify-content: flex-end
     .twelthSixteen
         width: 75%
+        &.testimonials
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: $spacingSection 0
+            .avatar-image
+                width: 83.44px
+                height: 87px
+                position: relative
+                background-image: url('../img/image-testimonial.png')
+                opacity: 1
+                border-radius: 76.5702px 76.5702px 76.3158px 0px
+                margin-bottom: $spacingM
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    z-index: -99
+                    top: -18px
+                    left: -50px
+                    background-image: url('../img/testimonial-element.svg')
+                    width: 100px
+                    height: 104.27px
+
+            h4
+                font-family: Sofia Pro
+                font-style: normal
+                font-weight: 500
+                font-size: 26px
+                line-height: 55px
+                text-align: center
+                margin-bottom: $spacingXS
+                color: #000D4F
+            p.testimonialParagraphs
+                font-family: Poppins
+                font-style: italic
+                width: 80%
+                font-weight: light
+                font-size: 16px
+                line-height: 32px
+                text-align: center
+                color: #576192
+                span
+                    font-weight: bold
+
         h3
             font-family: Sofia Pro
             font-style: normal
@@ -220,16 +272,8 @@ table
     .sevnthSixteen
         width: 43.75%
         .controlers
-            display: flex
             justify-content: flex-end
-            button
-                background: #FFFFFF
-                width: 60px
-                height: 60px
-                border: none
-                border-radius: 10px
-                margin-top: 318px
-                margin-left: 30px
+            margin-top: 318px
 
         .image
             width: 396px
@@ -289,23 +333,55 @@ table
         &.form
             display: flex
             justify-content: flex-end
+        &.left-contact
+            margin-top: 60px
+
+        .elements
+            .row-element
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                margin-bottom: 20px
+                .icon
+                    background: #DCE9FE
+                    display: block
+                    width: 50px
+                    height: 50px
+                    mix-blend-mode: normal
+                    border-radius: 13.14px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                .text
+                    font-family: Sofia Pro
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    margin-left: 20px
+                    line-height: 32px
+                    color: #000D4F
+
         form
             align-content: flex-end
             width: 80%
-            input
+            input,select
                 border: none
                 margin-top: 20px
                 font-family: Sofia Pro
                 font-style: normal
                 font-weight: bold
                 font-size: 16px
-                line-height: 55px
+                line-height: 60px
+                height: 60px
                 border-radius: 10px
-                padding: 0 30px
+                padding: 8px 30px 0 30px
                 background-color: #fff
                 text-transform: uppercase
                 color: $colorNonActive
                 box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1)
+            .custom-select
+                select
             button
                 font-family: Sofia Pro
                 font-style: normal
@@ -441,6 +517,16 @@ table
         right: -$violetSpacing
         z-index: -99
         min-height: 600px
+.controlers
+    display: flex
+    button
+        background: #FFFFFF
+        width: 60px
+        height: 60px
+        border: none
+        border-radius: 10px
+        margin-left: 30px
+        box-shadow: 0 29.7936px 42.1201px rgba(49, 95, 181, 0.2)
 .relative-contact
     position: relative
     margin: $spacingXL auto
@@ -462,6 +548,23 @@ table
         font-size: 38px
         line-height: 55px
         color: #000D4F
+        position: relative
+        &::before
+            content: ""
+            display: block
+            width: 163px
+            height: 169px
+            top: -60px
+            left: -60px
+            position: absolute
+            transform: translate(10px, 10px)
+            transform: translate(-50%,-50%)
+            z-index: -98
+            background: #FFFFFF
+            opacity: 0.7
+            -webkit-transform: rotate(-180deg)
+            transform: rotate(-180deg)
+            border-radius: 76.5702px 76.5702px 76.3158px 0px
 
 .preheading
     font-family: Sofia Pro
