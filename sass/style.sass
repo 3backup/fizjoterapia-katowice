@@ -30,6 +30,9 @@ blockquote:before, blockquote:after, q:before, q:after
 
 button
     cursor: pointer
+    transition: 0.3s
+button:hover
+    transform: scale(1.05)
 table
     border-collapse: collapse
     border-spacing: 0
@@ -259,7 +262,8 @@ table
             display: flex
             flex-direction: row
             justify-content: center
-            background: #EAEEFF;            padding: $spacingM
+            background: #EAEEFF
+            padding: $spacingM
             border-radius: 13.14px
             .icon
                 display: flex
@@ -296,6 +300,7 @@ table
 
     .sevnthSixteen
         width: 43.75%
+        display: flex
         .controlers
             justify-content: flex-end
             margin-top: 318px
@@ -481,7 +486,11 @@ table
 .map
     display: flex
     justify-content: space-around
-    margin: $spacingSection auto
+    margin: $spacingSection auto 0 auto
+    &.sevnthSixteen
+    img
+        margin-top: 20px
+        opacity: 0.5
     h2
         font-family: Sofia Pro
         font-style: normal
@@ -489,6 +498,8 @@ table
         font-size: 38px
         line-height: 44px
         color: #000D4F
+        span
+            font-weight: 500
 .elements
     display: flex
     flex-direction: column
@@ -813,3 +824,9 @@ footer
                 box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25)
                 border-radius: 10px
                 border: none
+#map
+    width: 90%
+    height: 440px
+    margin: -20px auto 0 auto
+    border-radius: 0px 100px 100px 100px
+    margin-bottom: $spacingSection

@@ -32,6 +32,13 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 button {
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 table {
@@ -451,6 +458,9 @@ table {
 
 .container .sevnthSixteen {
   width: 43.75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container .sevnthSixteen .controlers {
@@ -744,7 +754,12 @@ table {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 90px auto;
+  margin: 90px auto 0 auto;
+}
+
+.map img {
+  margin-top: 20px;
+  opacity: 0.5;
 }
 
 .map h2 {
@@ -754,6 +769,10 @@ table {
   font-size: 38px;
   line-height: 44px;
   color: #000D4F;
+}
+
+.map h2 span {
+  font-weight: 500;
 }
 
 .elements {
@@ -1237,5 +1256,13 @@ footer p {
           box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
   border-radius: 10px;
   border: none;
+}
+
+#map {
+  width: 90%;
+  height: 440px;
+  margin: -20px auto 0 auto;
+  border-radius: 0px 100px 100px 100px;
+  margin-bottom: 90px;
 }
 /*# sourceMappingURL=style.css.map */
