@@ -13,6 +13,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -383,6 +385,50 @@ table {
 
 .container .twelthSixteen.testimonials p.testimonialParagraphs span {
   font-weight: bold;
+}
+
+.container .twelthSixteen.transport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EAEEFF;
+  padding: 42px;
+  border-radius: 13.14px;
+}
+
+.container .twelthSixteen.transport .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  height: 56px;
+  background: #DCE9FE;
+  mix-blend-mode: normal;
+  border-radius: 13.14px;
+}
+
+.container .twelthSixteen.transport h5 {
+  padding-top: 3px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 42px;
+  line-height: 55px;
+  color: #576192;
 }
 
 .container .twelthSixteen h3 {
@@ -977,5 +1023,219 @@ footer p {
   line-height: 32px;
   color: #000D4F;
   opacity: 0.3;
+}
+
+.container.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.container.pricing::before {
+  content: "";
+  background-image: url("../img/bg-shades.svg");
+  position: absolute;
+  display: block;
+  height: 1100px;
+  top: -80%;
+  left: -50%;
+  right: -50%;
+  z-index: -99;
+}
+
+.container.pricing h3 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 55px;
+  text-align: center;
+  color: #000D4F;
+}
+
+.container.pricing .pricing-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 42px 0 68px 0;
+}
+
+.container.pricing .pricing-table .center-pricing, .container.pricing .pricing-table .small-pricing {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.pricing .pricing-table .center-pricing.pink, .container.pricing .pricing-table .small-pricing.pink {
+  color: #FCCDCF;
+}
+
+.container.pricing .pricing-table .center-pricing.pink .amount, .container.pricing .pricing-table .small-pricing.pink .amount {
+  margin: 0 auto;
+  width: 83.44px;
+  line-height: 87px;
+  height: 87px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FEF0F1;
+  opacity: 0.7;
+  border-radius: 76.5702px 76.5702px 0px 76.3158px;
+}
+
+.container.pricing .pricing-table .center-pricing.green, .container.pricing .pricing-table .small-pricing.green {
+  color: #73D6C4;
+}
+
+.container.pricing .pricing-table .center-pricing.green .amount, .container.pricing .pricing-table .small-pricing.green .amount {
+  margin: 0 auto;
+  height: 87px;
+  line-height: 87px;
+  width: 83.44px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #DDF4F3;
+  opacity: 0.7;
+  border-radius: 76.5702px 0px 76.5702px 76.3158px;
+}
+
+.container.pricing .pricing-table .center-pricing.yellow, .container.pricing .pricing-table .small-pricing.yellow {
+  color: #F4E134;
+}
+
+.container.pricing .pricing-table .center-pricing.yellow .amount, .container.pricing .pricing-table .small-pricing.yellow .amount {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 87px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 83.44px;
+  height: 87px;
+  background: #FCFFEB;
+  border-radius: 76.5702px 76.5702px 76.3158px 0px;
+}
+
+.container.pricing .pricing-table .center-pricing span, .container.pricing .pricing-table .small-pricing span {
+  margin-top: 27px;
+  font-size: 22px;
+  display: block;
+}
+
+.container.pricing .pricing-table .center-pricing {
+  width: 31%;
+  padding: 68px 0;
+  min-height: 390px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1);
+          box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.1);
+  border-radius: 13.14px;
+}
+
+.container.pricing .pricing-table .center-pricing button {
+  margin: 0 auto;
+  margin-top: 27px;
+  background: #000D4F;
+  -webkit-box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+          box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 0 42px 0 27px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 55px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.pricing .pricing-table .center-pricing button img {
+  margin-right: 16px;
+}
+
+.container.pricing .pricing-table .center-pricing button span {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.container.pricing .small-pricing {
+  background: #FFFFFF;
+  padding: 42px 0;
+  width: 28%;
+  min-height: 350px;
+  -webkit-box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.04);
+          box-shadow: 0px 69.7936px 72.1201px rgba(49, 95, 181, 0.04);
+  border-radius: 13.14px;
+}
+
+.container.pricing .small-pricing button {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 9px 40px 0 40px;
+  line-height: 60px;
+  margin: 0 auto;
+  margin-top: 27px;
+  max-width: 80%;
+  text-transform: uppercase;
+  color: #000D4F;
+  background: #FFFFFF;
+  -webkit-box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+          box-shadow: 10px 14px 40px rgba(146, 146, 146, 0.25);
+  border-radius: 10px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
