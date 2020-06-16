@@ -1044,6 +1044,22 @@ footer p {
   opacity: 0.3;
 }
 
+.bgShadyBlue {
+  position: relative;
+}
+
+.bgShadyBlue::before {
+  content: "";
+  background-image: url("../img/bg-shades.svg");
+  position: absolute;
+  display: block;
+  height: 1100px;
+  top: -80%;
+  left: 0;
+  right: 0;
+  z-index: -99;
+}
+
 .container.pricing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1053,18 +1069,6 @@ footer p {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-}
-
-.container.pricing::before {
-  content: "";
-  background-image: url("../img/bg-shades.svg");
-  position: absolute;
-  display: block;
-  height: 1100px;
-  top: -80%;
-  left: -50%;
-  right: -50%;
-  z-index: -99;
 }
 
 .container.pricing h3 {
@@ -1264,5 +1268,24 @@ footer p {
   margin: -20px auto 0 auto;
   border-radius: 0px 100px 100px 100px;
   margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+  .relative::before {
+    right: -3.875%;
+  }
+  .relative-contact::before {
+    right: -3.875%;
+    left: -3.875%;
+  }
+  .topMenu {
+    max-width: 90%;
+  }
+  .topMenu .infoPack div.open-hoursa {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

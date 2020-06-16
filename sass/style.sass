@@ -684,21 +684,24 @@ footer
         line-height: 32px
         color: #000D4F
         opacity: 0.3
+.bgShadyBlue
+    position: relative
+    &::before
+        content: ""
+        background-image: url('../img/bg-shades.svg')
+        position: absolute
+        display: block
+        height: 1100px
+        top: -80%
+        left: 0
+        right: 0
+        z-index: -99
 .container
     &.pricing
         display: flex
         flex-direction: column
         position: relative
-        &::before
-            content: ""
-            background-image: url('../img/bg-shades.svg')
-            position: absolute
-            display: block
-            height: 1100px
-            top: -80%
-            left: -50%
-            right: -50%
-            z-index: -99
+
         h3
             font-family: Sofia Pro
             font-style: normal
@@ -830,3 +833,5 @@ footer
     margin: -20px auto 0 auto
     border-radius: 0px 100px 100px 100px
     margin-bottom: $spacingSection
+
+@import rwd
