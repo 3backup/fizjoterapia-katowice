@@ -1270,21 +1270,217 @@ footer p {
   margin-bottom: 90px;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 950px;
-  }
+@media screen and (max-width: 1600px) {
   .relative::before {
-    right: -3.875%;
+    right: -11.875%;
   }
   .relative-contact::before {
-    right: -3.875%;
-    left: -3.875%;
+    right: -11.875%;
+    left: -11.875%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .relative::before {
+    right: -6.875%;
+  }
+  .relative-contact::before {
+    right: -6.875%;
+    left: -6.875%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .map img {
+    max-width: 90%;
+  }
+  .container {
+    max-width: 900px;
+  }
+  .container.pricing .small-pricing button {
+    padding: 9px 15px 0 15px;
+  }
+  .container .ninthSixteen {
+    margin-left: 30px;
+  }
+  .container .sixthSixteen .imagesRight {
+    width: 350px;
+    background-position: center;
+  }
+  .container .sixthSixteen .imagesRight::before {
+    right: -10px;
+  }
+  .container .half .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .half .buttons .firstButton {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .container .half .buttons .secondButton {
+    margin-top: 27px;
+  }
+  .container .half div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .half .mainImage::before {
+    right: -20px;
+  }
+  .container .half .mainImage img {
+    max-width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .relative::before {
+    right: -1.875%;
+  }
+  .relative-contact h3::before {
+    left: -15px;
+  }
+  .relative-contact::before {
+    right: -1.875%;
+    left: -1.875%;
   }
   .topMenu {
     max-width: 90%;
   }
-  .topMenu .infoPack div.open-hoursa {
+  .topMenu .infoPack div.open-hours {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map {
+    margin: 90px auto 8px auto;
+  }
+  .container {
+    max-width: 700px;
+  }
+  .container.relative-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container.relative-contact::before {
+    min-height: 900px;
+  }
+  .container.relative-contact .left-contact {
+    width: 90%;
+  }
+  .container.relative::before {
+    min-height: 850px;
+  }
+  .container.wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container.pricing .pricing-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container.pricing .pricing-table .center-pricing {
+    width: 60%;
+    margin-top: 42px;
+  }
+  .container.pricing .small-pricing {
+    width: 60%;
+    margin-top: 42px;
+  }
+  .container .half {
+    width: 100%;
+  }
+  .container .half.spacing {
+    margin-top: 68px;
+  }
+  .container .half.form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .tenthSixteen {
+    width: 100%;
+  }
+  .container .fourhtSixteen .imageFizjo {
+    width: 163px;
+    height: 171px;
+    position: relative;
+    background-size: cover;
+  }
+  .container .sixthSixteen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .container .sixthSixteen .imagesRight {
+    max-height: 80vh;
+    width: 700px;
+    margin-top: 42px;
+    background-size: cover;
+    background-position: top center;
+  }
+  .container .seventhSixteen .image {
+    background-size: cover;
+    height: 550px;
+  }
+  .container .seventhSixteen .controlers {
+    margin-top: 520px;
+  }
+  .container .twelthSixteen {
+    width: 100%;
+  }
+  .container .twelthSixteen.testimonials {
+    width: 100%;
+  }
+  .container .ninthSixteen .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .ninthSixteen .tabs h3 {
+    line-height: 115%;
+  }
+  .container .ninthSixteen .standardParagraph {
+    width: 80%;
+  }
+  .topMenu .infoPack {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .container .half {
+    width: 100%;
+  }
+  .topMenu {
     display: none;
   }
 }

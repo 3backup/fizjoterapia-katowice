@@ -1,14 +1,144 @@
-@media screen and (max-width: 1200px)
-    .container
-        max-width: 950px
-        .pricing
+@media screen and (max-width: 1600px)
     .relative::before
-        right: -3.875%
+        right: -11.875%
     .relative-contact::before
-        right: -3.875%
-        left: -3.875%
+        right: -11.875%
+        left: -11.875%
+
+@media screen and (max-width: 1400px)
+    .relative::before
+        right: -6.875%
+    .relative-contact::before
+        right: -6.875%
+        left: -6.875%
+
+@media screen and (max-width: 1200px)
+    .map
+        img
+            max-width: 90%
+    .container
+        max-width: 900px
+        &.pricing
+            .small-pricing
+                button
+                    padding: 9px 15px 0 15px
+        .ninthSixteen
+            margin-left: 30px
+        .sixthSixteen
+            .imagesRight
+                width: 350px
+                background-position: center
+                &::before
+                    right: -10px
+        .half
+            .buttons
+                display: flex
+                align-items: flex-start
+                justify-content: flex-start
+                flex-direction: column
+                .firstButton
+                    align-self: flex-start
+                .secondButton
+                    margin-top: $spacingS
+            div
+                flex-direction: column
+            .mainImage
+                &::before
+                    right: -20px
+                img
+                    max-width: 90%
+                    justify-content: center
+
+    .relative::before
+        right: -1.875%
+    .relative-contact
+        h3
+            &::before
+                left: -15px
+    .relative-contact::before
+        right: -1.875%
+        left: -1.875%
     .topMenu
         max-width: 90%
         .infoPack
-            div.open-hoursa
+            div.open-hours
                 display: none
+@media screen and (max-width: 992px)
+
+    .map
+        margin: 90px auto 8px auto
+    .container
+        max-width: 700px
+        &.relative-contact
+            display: flex
+            justify-content: center
+            &::before
+                min-height: 900px
+            .left-contact
+                width: 90%
+        &.relative
+            &::before
+                min-height: 850px
+        &.wrap
+            flex-wrap: wrap
+        &.pricing
+            .pricing-table
+                flex-direction: column
+                .center-pricing
+                    width: 60%
+                    margin-top: $spacingM
+            .small-pricing
+                width: 60%
+                margin-top: $spacingM
+        .half
+            width: 100%
+            &.spacing
+                margin-top: $spacingL
+            &.form
+                justify-content: center
+        .tenthSixteen
+            width: 100%
+
+        .fourhtSixteen
+            .imageFizjo
+                width: 163px
+                height: 171px
+                position: relative
+                background-size: cover
+        .sixthSixteen
+            display: flex
+            justify-content: center
+            width: 100%
+            .imagesRight
+                max-height: 80vh
+                width: 700px
+                margin-top: $spacingM
+                background-size: cover
+                background-position: top center
+        .seventhSixteen
+            .image
+                background-size: cover
+                height: 550px
+            .controlers
+                margin-top: 520px
+        .twelthSixteen
+            width: 100%
+            &.testimonials
+                width: 100%
+        .ninthSixteen
+            .tabs
+                flex-direction: column
+                h3
+                    line-height: 115%
+            .standardParagraph
+                width: 80%
+    .topMenu
+        .infoPack
+            display: none
+@media screen and (max-width: 768px)
+    .container
+        max-width: 700px
+        .half
+            width: 100%
+    .topMenu
+        display: none

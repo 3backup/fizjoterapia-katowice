@@ -1,18 +1,115 @@
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 950px;
-  }
+@media screen and (max-width: 1600px) {
   .relative::before {
-    right: -3.875%;
+    right: -11.875%;
   }
   .relative-contact::before {
-    right: -3.875%;
-    left: -3.875%;
+    right: -11.875%;
+    left: -11.875%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .relative::before {
+    right: -6.875%;
+  }
+  .relative-contact::before {
+    right: -6.875%;
+    left: -6.875%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .map img {
+    max-width: 90%;
+  }
+  .container {
+    max-width: 900px;
+  }
+  .container .ninthSixteen {
+    margin-left: 30px;
+  }
+  .container .sixthSixteen .imagesRight {
+    width: 350px;
+    background-position: center;
+  }
+  .container .sixthSixteen .imagesRight::before {
+    right: -10px;
+  }
+  .container .half .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .half .buttons .firstButton {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .container .half .buttons .secondButton {
+    margin-top: 40px;
+  }
+  .container .half div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .half .mainImage::before {
+    right: -20px;
+  }
+  .container .half .mainImage img {
+    max-width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .relative::before {
+    right: -1.875%;
+  }
+  .relative-contact h3::before {
+    left: -15px;
+  }
+  .relative-contact::before {
+    right: -1.875%;
+    left: -1.875%;
   }
   .topMenu {
     max-width: 90%;
   }
-  .topMenu .infoPack div.open-hoursa {
+  .topMenu .infoPack div.open-hours {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .container .half {
+    width: 100%;
+  }
+  .topMenu .infoPack {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .container .half {
+    width: 100%;
+  }
+  .topMenu {
     display: none;
   }
 }
