@@ -1366,6 +1366,9 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
+  .controlers button {
+    margin: 0;
+  }
   .map {
     margin: 90px auto 8px auto;
   }
@@ -1387,7 +1390,8 @@ footer p {
     width: 90%;
   }
   .container.relative::before {
-    min-height: 850px;
+    min-height: 1100px;
+    right: -3%;
   }
   .container.wrap {
     -ms-flex-wrap: wrap;
@@ -1406,6 +1410,10 @@ footer p {
   .container.pricing .small-pricing {
     width: 60%;
     margin-top: 42px;
+  }
+  .container.wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .container .half {
     width: 100%;
@@ -1443,17 +1451,30 @@ footer p {
     background-size: cover;
     background-position: top center;
   }
-  .container .seventhSixteen .image {
-    background-size: cover;
-    height: 550px;
+  .container .sevnthSixteen {
+    width: 100%;
   }
-  .container .seventhSixteen .controlers {
-    margin-top: 520px;
+  .container .sevnthSixteen .image {
+    background-size: cover;
+    width: 100%;
+  }
+  .container .sevnthSixteen .image::before {
+    right: 0px;
   }
   .container .twelthSixteen {
     width: 100%;
   }
   .container .twelthSixteen.testimonials {
+    width: 100%;
+  }
+  .container .twelthSixteen h5 {
+    line-height: 115%;
+  }
+  .container .ninthSixteen {
+    width: 100%;
+    margin-top: 42px;
+  }
+  .container .ninthSixteen button {
     width: 100%;
   }
   .container .ninthSixteen .tabs {
@@ -1466,7 +1487,7 @@ footer p {
     line-height: 115%;
   }
   .container .ninthSixteen .standardParagraph {
-    width: 80%;
+    width: 100%;
   }
   .topMenu .infoPack {
     display: none;
@@ -1475,13 +1496,42 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .container .half {
+  .container .sixthSixteen .imagesRight {
+    width: 480px;
+  }
+  .container .half .mainImage::before {
+    right: 20px;
+  }
+  .container .half .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .half .buttons .firstButton {
     width: 100%;
+  }
+  .container .half .buttons .secondButton {
+    margin: 27px auto;
   }
   .topMenu {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 310px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .buttons .firstButton {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

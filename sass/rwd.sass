@@ -64,7 +64,8 @@
             div.open-hours
                 display: none
 @media screen and (max-width: 992px)
-
+    .controlers button
+        margin: 0
     .map
         margin: 90px auto 8px auto
     .container
@@ -78,7 +79,8 @@
                 width: 90%
         &.relative
             &::before
-                min-height: 850px
+                min-height: 1100px
+                right: -3%
         &.wrap
             flex-wrap: wrap
         &.pricing
@@ -90,6 +92,8 @@
             .small-pricing
                 width: 60%
                 margin-top: $spacingM
+        &.wrap
+            justify-content: space-around
         .half
             width: 100%
             &.spacing
@@ -115,30 +119,58 @@
                 margin-top: $spacingM
                 background-size: cover
                 background-position: top center
-        .seventhSixteen
+        .sevnthSixteen
+            width: 100%
             .image
                 background-size: cover
-                height: 550px
+                width: 100%
+                &::before
+                    right: 0px
             .controlers
-                margin-top: 520px
         .twelthSixteen
             width: 100%
             &.testimonials
                 width: 100%
+            h5
+                line-height: 115%
         .ninthSixteen
+            width: 100%
+            margin-top: $spacingM
+            button
+                width: 100%
             .tabs
                 flex-direction: column
                 h3
                     line-height: 115%
             .standardParagraph
-                width: 80%
+                width: 100%
     .topMenu
         .infoPack
             display: none
 @media screen and (max-width: 768px)
     .container
-        max-width: 700px
+        max-width: 500px
+        justify-content: center
+        .sixthSixteen
+            .imagesRight
+                width: 480px
         .half
-            width: 100%
+            .mainImage
+                &::before
+                    right: 20px
+            .buttons
+                justify-content: center
+                .firstButton
+                    width: 100%
+                .secondButton
+                    margin: 27px auto
     .topMenu
         display: none
+
+@media screen and (max-width: 576px)
+    .container
+        max-width: 310px
+        justify-content: center
+        .buttons
+            .firstButton
+                width: 100%
