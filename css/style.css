@@ -130,7 +130,7 @@ table {
 }
 
 .topMenu ul li {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -178,7 +178,7 @@ table {
 }
 
 .container .tenthSixteen h2 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   padding-top: 139px;
   font-weight: 300;
@@ -242,7 +242,7 @@ table {
 }
 
 .container .tenthSixteen .forWho h4 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -369,7 +369,7 @@ table {
 }
 
 .container .twelthSixteen.testimonials h4 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
@@ -429,7 +429,7 @@ table {
 
 .container .twelthSixteen.transport h5 {
   padding-top: 3px;
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -439,7 +439,7 @@ table {
 }
 
 .container .twelthSixteen h3 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
@@ -448,7 +448,7 @@ table {
 }
 
 .container .twelthSixteen h4 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 26px;
@@ -519,7 +519,7 @@ table {
 }
 
 .container .ninthSixteen .tabs h3 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
@@ -530,7 +530,7 @@ table {
 }
 
 .container .ninthSixteen .tabs h3.active {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
@@ -606,7 +606,7 @@ table {
 }
 
 .container .half .elements .row-element .text {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -624,7 +624,7 @@ table {
 .container .half form input, .container .half form select {
   border: none;
   margin-top: 20px;
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -640,7 +640,7 @@ table {
 }
 
 .container .half form button {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   margin-top: 20px;
   font-weight: bold;
@@ -763,7 +763,7 @@ table {
 }
 
 .map h2 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 38px;
@@ -845,7 +845,7 @@ table {
 }
 
 .benefits div h5 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -907,7 +907,7 @@ table {
 }
 
 .relative-contact h3 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
@@ -937,7 +937,7 @@ table {
 }
 
 .preheading {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -948,7 +948,7 @@ table {
 }
 
 h1 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -963,7 +963,7 @@ button.firstButton {
   border-radius: 10px;
   color: #ffffff;
   padding: 0 42px 0 27px;
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: bold;
   line-height: 55px;
@@ -993,7 +993,7 @@ button.firstButton span {
 
 button.secondButton {
   position: relative;
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1072,7 +1072,7 @@ footer p {
 }
 
 .container.pricing h3 {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
@@ -1100,7 +1100,7 @@ footer p {
 }
 
 .container.pricing .pricing-table .center-pricing, .container.pricing .pricing-table .small-pricing {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
@@ -1204,7 +1204,7 @@ footer p {
   border-radius: 10px;
   color: #ffffff;
   padding: 0 42px 0 27px;
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: bold;
   line-height: 55px;
@@ -1244,7 +1244,7 @@ footer p {
 }
 
 .container.pricing .small-pricing button {
-  font-family: Sofia Pro;
+  font-family: sofia-pro, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
