@@ -987,10 +987,6 @@ button.firstButton img {
   margin-right: 16px;
 }
 
-button.firstButton span {
-  margin-top: 5px;
-}
-
 button.secondButton {
   position: relative;
   font-family: sofia-pro, sans-serif;
@@ -1533,6 +1529,9 @@ footer p {
   }
   .container .twelthSixteen.transport h5 {
     line-height: 115%;
+  }
+  .container .twoSixteen {
+    display: none;
   }
   .container .tenthSixteen .forWho div {
     width: 100%;
