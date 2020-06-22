@@ -65,7 +65,7 @@
                 display: none
 @media screen and (max-width: 992px)
     .controlers button
-        margin: 0
+        margin: 0 10px
     .map
         margin: 90px auto 8px auto
     .container
@@ -94,6 +94,13 @@
                 margin-top: $spacingM
         &.wrap
             justify-content: space-around
+        &.benefits
+            flex-direction: column
+            div
+                width: 100%
+                margin-top: $spacingM
+                .squareRadius
+                    width: 76px
         .half
             width: 100%
             &.spacing
@@ -151,9 +158,26 @@
     .container
         max-width: 500px
         justify-content: center
+        &.pricing
+            .pricing-table
+                flex-direction: column
+                .center-pricing
+                    width: 90%
+                    margin-top: $spacingM
+            .small-pricing
+                width: 90%
+                margin-top: $spacingM
         .sixthSixteen
             .imagesRight
                 width: 480px
+        .twelthSixteen
+            &.transport
+                h5
+                    line-height: 115%
+        .tenthSixteen
+            .forWho
+                div
+                    width: 100%
         .half
             .mainImage
                 &::before
@@ -166,7 +190,15 @@
                     margin: 27px auto
     .topMenu
         display: none
-
+    footer
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        img
+            margin: 30px 0px 30px 0px
+        p
+            width: 100%
+            margin-bottom: 30px
 @media screen and (max-width: 576px)
     .container
         max-width: 310px

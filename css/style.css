@@ -1367,7 +1367,7 @@ footer p {
 
 @media screen and (max-width: 992px) {
   .controlers button {
-    margin: 0;
+    margin: 0 10px;
   }
   .map {
     margin: 90px auto 8px auto;
@@ -1414,6 +1414,19 @@ footer p {
   .container.wrap {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .container.benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container.benefits div {
+    width: 100%;
+    margin-top: 42px;
+  }
+  .container.benefits div .squareRadius {
+    width: 76px;
   }
   .container .half {
     width: 100%;
@@ -1501,8 +1514,28 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .container.pricing .pricing-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container.pricing .pricing-table .center-pricing {
+    width: 90%;
+    margin-top: 42px;
+  }
+  .container.pricing .small-pricing {
+    width: 90%;
+    margin-top: 42px;
+  }
   .container .sixthSixteen .imagesRight {
     width: 480px;
+  }
+  .container .twelthSixteen.transport h5 {
+    line-height: 115%;
+  }
+  .container .tenthSixteen .forWho div {
+    width: 100%;
   }
   .container .half .mainImage::before {
     right: 20px;
@@ -1520,6 +1553,24 @@ footer p {
   }
   .topMenu {
     display: none;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer img {
+    margin: 30px 0px 30px 0px;
+  }
+  footer p {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
