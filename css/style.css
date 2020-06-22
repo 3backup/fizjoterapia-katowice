@@ -1576,7 +1576,7 @@ footer p {
 
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 310px;
+    max-width: 90%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
